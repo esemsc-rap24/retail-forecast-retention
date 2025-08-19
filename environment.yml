@@ -1,0 +1,45 @@
+name: retail-forecast-retention
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Core Python
+  - python=3.10
+
+  # Data Science Core
+  - pandas
+  - numpy
+  - scipy
+
+  # Visualization
+  - matplotlib
+  - seaborn
+
+  # Machine Learning & NLP
+  - scikit-learn
+  - transformers
+  - pytorch
+  - tokenizers
+
+  # Jupyter Environment
+  - jupyter
+  - jupyterlab
+  - ipykernel
+  - ipywidgets
+
+  # Data Processing
+  - xlsxwriter
+  - openpyxl
+
+  # API and HTTP
+  - requests
+
+  # Development Tools
+  - pip
+
+  # Pip-only packages
+  - pip:
+    - huggingface-hub
+    - datasets
+    - accelerate
+    - safetensors
