@@ -67,9 +67,9 @@ retail-forecast-retention/
 ## How to Use
 
 ### Step 1: Prepare Your Data
-Place your retail transaction CSV files in the `datasets/` folder. The analysis expects standard retail data columns like:
-- Transaction dates, customer IDs, product details
-- Sales amounts, quantities, categories
+Download the datasets data here (`retail_transaction_data.csv` is required): https://drive.google.com/drive/folders/1RI-00NTO-bOvxTPbvdQJ2eINg5CPZwK3?usp=sharing
+
+Place your retail transaction CSV files in the `datasets/` folder, in the root of repository. 
 
 ### Step 2: Run the Analysis
 Open the notebooks in this order:
