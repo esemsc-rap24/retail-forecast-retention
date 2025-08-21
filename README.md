@@ -1,75 +1,81 @@
-# Retail Forecast Retention Analysis
+# Retail Forecast & Customer Retention Analysis
 
-A comprehensive retail business analysis project focused on understanding customer behavior, product performance, and revenue optimization opportunities.
+A data science project that helps retail businesses understand customer behavior, optimize inventory through demand forecasting, and improve customer retention using machine learning.
 
-## Environment Setup
+---
 
-This project uses conda for environment management. The `environment.yml` file contains all necessary dependencies.
+## What This Project Does
+
+This analysis toolkit provides three core capabilities:
+
+### **Business Intelligence Dashboard**
+- Deep dive into retail performance metrics
+- Customer segmentation and behavioral analysis  
+- Product performance and profitability insights
+- Year-over-year growth trends and seasonality patterns
+
+### **Demand Forecasting**
+- Predict sales for the next 6 months
+- Identify which products need restocking
+- Understand seasonal demand patterns
+- Inventory optimization recommendations
+
+### **Customer 360 & Retention**
+- Identify high-value customers at risk of churning
+- Personalized product recommendations
+- Customer lifetime value prediction
+- Targeted retention campaign strategies
+
+---
+
+## Quick Start
 
 ### Prerequisites
-
 - [Anaconda](https://www.anaconda.com/products/distribution) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
-- Python 3.10+
+- 4GB+ RAM recommended for ML models
 
-### Installation
+### Setup
 
-1. **Clone or navigate to the project directory:**
-   ```bash
-   cd /home/rap24/retail-forecast-retention
-   ```
-
-2. **Create the conda environment:**
-   ```bash
-   conda env create -f environment.yml
-   ```
-
-3. **Activate the environment:**
-   ```bash
-   conda activate retail-forecast-retention
-   ```
-
-4. **Launch Jupyter Lab (optional):**
-   ```bash
-   jupyter lab
-   ```
-
-### Key Dependencies
-
-The environment includes:
-
-- **Data Science Core**: pandas, numpy, scipy
-- **Visualization**: matplotlib, seaborn, plotly
-- **Machine Learning & NLP**: scikit-learn, transformers, torch
-- **Jupyter Environment**: jupyterlab, ipykernel, ipywidgets
-- **API Integration**: openai for LLM-based product categorization
-- **Data Processing**: xlsxwriter, openpyxl for Excel files
-
-### Deactivation
-
-To deactivate the environment:
 ```bash
-conda deactivate
+# 1. Navigate to project directory
+cd /home/rap24/retail-forecast-retention
+
+# 2. Create and activate environment (includes all ML dependencies)
+conda env create -f environment.yml
+conda activate retail-forecast-retention
+
+# 3. Launch Jupyter Lab
+jupyter lab
 ```
 
-## Project Structure
+## 📁 Project Structure
 
-- `retail_business_analysis.ipynb` - Main analysis notebook
-- `datasets/` - Data files directory
-- `environment.yml` - Conda environment specification
-- `README.md` - This file
+```
+retail-forecast-retention/
+├──  retail_business_analysis.ipynb    # Main business intelligence analysis
+├──  demand_forecast.ipynb             # Sales forecasting & inventory planning  
+├──  customer_360_clean.ipynb          # Customer analytics & retention
+├──  Project Brief.md                  # Original requirements & objectives
+├──  datasets/                         # Your retail transaction data
+├──  docs/                            # Documentation & reports
+├──  environment.yml                   # Python environment setup
+└──  README.md                        # This guide
+```
 
-## Usage
+---
 
-1. Ensure your data files are in the `datasets/` directory
-2. Activate the conda environment
-3. Open and run the Jupyter notebook
-4. Follow the analysis sections for comprehensive retail insights
+## How to Use
 
-## Features
+### Step 1: Prepare Your Data
+Place your retail transaction CSV files in the `datasets/` folder. The analysis expects standard retail data columns like:
+- Transaction dates, customer IDs, product details
+- Sales amounts, quantities, categories
 
-- **Data Quality Assessment**: Comprehensive data cleaning and validation
-- **Customer Analysis**: Cohort analysis, segmentation, and retention metrics  
-- **Product Categorization**: AI-powered product classification using Hugging Face transformers
-- **Business Performance**: KPI tracking, YoY analysis, and trend identification
-- **Seasonality Analysis**: Demand patterns and forecasting insights
-- **Visualization Dashboard**: Professional charts and business intelligence views
+### Step 2: Run the Analysis
+Open the notebooks in this order:
+
+1. **`retail_business_analysis.ipynb`** - Start here for overall business insights
+2. **`demand_forecast.ipynb`** - Generate sales forecasts and inventory recommendations  
+3. **`customer_360_clean.ipynb`** - Analyze customer behavior and retention
+
+### Step 3: Get Insights
